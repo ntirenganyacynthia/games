@@ -99,7 +99,7 @@ export default function GoFishGame() {
   const runPlayerTurn = async (playerId, chosenRank) => {
     if (gameOver) return;
 
-    await delay(2500); 
+    await delay(1500); 
 
     const nextPlayer = (playerId + 1) % 4;
     const hands = [...playersHands];
