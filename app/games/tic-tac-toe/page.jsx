@@ -38,7 +38,7 @@ export default function TicTacToePage() {
 
   function handleClick(index) {
     const next = makeMove(board, index, player);
-    if (next === board) return; // illegal move, ignore
+    if (next === board) return; 
     setBoard(next);
     setPlayer((p) => nextPlayer(p));
   }
